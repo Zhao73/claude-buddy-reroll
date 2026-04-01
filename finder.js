@@ -102,18 +102,18 @@ function getRarity(rng) {
 
 function getStats(rng, rarity) {
   const base = STAT_BASE[rarity];
-  const result = {};
-  const peakIdx = Math.floor(rng() * 5);
-  let valleyIdx = Math.floor(rng() * 5);
-  while (valleyIdx === peakIdx) valleyIdx = Math.floor(rng() * 5);
+  const peakStat = pick(rng, STATS);
+  let valleyStat = pick(rng, STATS);
+  while (valleyStat === peakStat) valleyStat = pick(rng, STATS);
 
-  for (let i = 0; i < 5; i++) {
-    if (i === peakIdx) {
-      result[STATS[i]] = Math.min(100, base + 20 + Math.floor(rng() * 30));
-    } else if (i === valleyIdx) {
-      result[STATS[i]] = Math.max(1, base - 10 + Math.floor(rng() * 15));
+  const result = {};
+  for (const stat of STATS) {
+    if (stat === peakStat) {
+      result[stat] = Math.min(100, base + 50 + Math.floor(rng() * 30));
+    } else if (stat === valleyStat) {
+      result[stat] = Math.max(1, base - 10 + Math.floor(rng() * 15));
     } else {
-      result[STATS[i]] = base + Math.floor(rng() * 40);
+      result[stat] = base + Math.floor(rng() * 40);
     }
   }
   return result;

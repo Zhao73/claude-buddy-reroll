@@ -81,7 +81,7 @@ When you log in with the `CLAUDE_CODE_OAUTH_TOKEN` environment variable, Claude 
 
 ## 5 Stats
 
-Each buddy has five core attributes. One is randomly boosted (peak), one is nerfed (valley), the rest are normal.
+Each buddy has five core attributes. One is randomly boosted (**peak**), one is nerfed (**valley**), the rest are **normal**.
 
 | Stat | Description |
 |------|-------------|
@@ -91,154 +91,164 @@ Each buddy has five core attributes. One is randomly boosted (peak), one is nerf
 | **WISDOM** | Depth of insight |
 | **SNARK** | Sass level in comments |
 
+### Stat Generation Formula
+
+| Type | Formula | Legendary Range |
+|------|---------|-----------------|
+| **Peak** | `min(100, base + 50 + random(0~29))` | 100 |
+| **Valley** | `max(1, base - 10 + random(0~14))` | 40 ~ 54 |
+| **Normal** | `base + random(0~39)` | 50 ~ 89 |
+
+Peak and valley stats are randomly selected from the 5 attributes using the same PRNG sequence.
+
 ---
 
 ## Pre-rolled Legendary Shiny Collection
 
-Every species, **Legendary + Shiny**, ready to use.
+Every species, **Legendary + Shiny**, ready to use. Stats verified against actual `/buddy` output.
 
 ### duck — 鸭子
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | · | crown | 79 | 79 | 83 | 67 | 49 |
+| ★★★★★ | ✨ | ° | wizard | 54 | **100** | 61 | 67 | 83 |
 ```
-b03467199f3f7738a40e02b95dae20f983a7d9d748fb953c4befcac0d5dbb074
+fbb064c6d0dc67b01121b757aab224f8a1c3876e85698663c8dd7d02117c3c0d
 ```
 
 ### goose — 鹅
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ° | tinyduck | 89 | 61 | 42 | 56 | 79 |
+| ★★★★★ | ✨ | ◉ | tinyduck | 64 | **100** | 41 | 51 | 78 |
 ```
-b1403f0a5cfa7a39828d0eafd970e37373d590cd982042dba344a9fafe56ac84
+e4b9555f102f85c16a6774ed2a7d6798c16fdcd03c14c0af79cb53e9620c08b4
 ```
 
 ### blob — 果冻
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ◉ | beanie | 70 | 86 | 60 | 54 | 89 |
+| ★★★★★ | ✨ | @ | beanie | **100** | 46 | 76 | 86 | 83 |
 ```
-46224d7dbf75582100bffe3c05d105e24bdef194145519851c3137937ec32af8
+469b08168a7c158cafce4688ee78fc192a2603e626a5646250069a5650b2b6a9
 ```
 
 ### cat — 猫
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ° | halo | 58 | 53 | 76 | 98 | 56 |
+| ★★★★★ | ✨ | ✦ | propeller | 64 | 71 | 61 | 41 | **100** |
 ```
-5a90984417fda046ef449217a6c9fd38890145175ff6cc94c64c8a694a75adbb
+d1330a144e69962f6b631868a5e2a87de51582969412fa6e21556ed0fce560b6
 ```
 
 ### dragon — 龙
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ◉ | halo | 86 | 54 | 53 | 49 | 66 |
+| ★★★★★ | ✨ | · | wizard | 60 | 61 | 54 | **100** | 87 |
 ```
-7205da0858ac461f661d397b4268d9088d35c97ebd1901ae15293bdbce66be69
+dfe9f0bf17732d12136e4063ed352c12c190817432f36f5add6a5e5854274dcb
 ```
 
 ### octopus — 章鱼
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ✦ | none | 49 | 87 | 56 | 84 | 79 |
+| ★★★★★ | ✨ | ° | beanie | 77 | **100** | 69 | 69 | 44 |
 ```
-b0defdc00cfcd0953aa0075774ecd208fb17077c922842e006edce87aea258bb
+7008e44266d5ba07b12a302728729febe7265ee640b069f4288158dc44b26e63
 ```
 
 ### owl — 猫头鹰
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ° | tinyduck | 40 | 53 | 54 | 54 | 86 |
+| ★★★★★ | ✨ | × | propeller | 84 | 53 | 54 | **100** | 72 |
 ```
-2b3d64a69bb3a89c4f37c593192e2bfd75b2a35f846c456e277fb2b91f88c5f6
+e9f590be928a17e32664baa252e08edce6812dc86ed96abe3c06ae496c5d1950
 ```
 
 ### penguin — 企鹅
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ° | beanie | 85 | 86 | 84 | 80 | 49 |
+| ★★★★★ | ✨ | · | wizard | 51 | 53 | **100** | 65 | 80 |
 ```
-4fba1dd47618744560a59c883145b86d7579cfd03d09e3f722c1aff01e13202d
+1c9aef4f3ef2ff9d561fdb467f120aee7ac244ff464347479b2d2b354e35dfb5
 ```
 
 ### turtle — 乌龟
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ✦ | tinyduck | 45 | 79 | 50 | 97 | 70 |
+| ★★★★★ | ✨ | ° | none | **100** | 59 | 89 | 52 | 89 |
 ```
-a0d9eb1f94f673b43b2a198c7fb80ed23d51e50248dc8e145bfcd892cf0a9707
+f287702f0e017d1f65599231d4c6a9ce53274d34e6090f0081d0194fd87df49c
 ```
 
 ### snail — 蜗牛
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ° | tinyduck | 74 | 71 | 57 | 66 | 42 |
+| ★★★★★ | ✨ | @ | tophat | **100** | 89 | 64 | 67 | 42 |
 ```
-cc7c2ec9695c1e2442c4b67ec3dd4d862e1bfd807cc498dbab5480ecb4348c81
+a75398e61456425c7eeecd5fef2b567338d289a300669e5570db32b9cf4bafb3
 ```
 
 ### ghost — 幽灵
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ° | crown | 85 | 89 | 92 | 52 | 50 |
+| ★★★★★ | ✨ | ◉ | tophat | 40 | 69 | 61 | **100** | 69 |
 ```
-a2554292a1ef78caedec872c11edca483eae3172dfbeec6440deaece17dab126
+b4cf03d9615a11b13560c625d7c1f4e26a5960e7674c18c7084582d1542755f3
 ```
 
 ### axolotl — 六角恐龙
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ✦ | beanie | 78 | 46 | 84 | 70 | 87 |
+| ★★★★★ | ✨ | ° | tinyduck | **100** | 75 | 51 | 52 | 79 |
 ```
-0dec9ea0ebb08017dbe54c5588695f4b8671797514f5f2d4420136c550c9c209
+9afda6fae3735ad19bed7e55c826d3c4c16ab5b13fa4d869e8bce9de0c6df45c
 ```
 
 ### capybara — 卡皮巴拉
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ✦ | beanie | 67 | 79 | 77 | 40 | 85 |
+| ★★★★★ | ✨ | ✦ | beanie | 54 | 59 | 49 | **100** | 72 |
 ```
-cade0036539dc08490c4766275fec727f73659f2979f8bc0a6d182166314e08f
+874d02aae1974e98baba8dbe60801ef48852f699764d418577785f8eb5ffbab8
 ```
 
 ### cactus — 仙人掌
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ◉ | none | 85 | 41 | 53 | 89 | 92 |
+| ★★★★★ | ✨ | ✦ | none | 85 | 85 | 52 | **100** | 48 |
 ```
-24922a0623f0935fd0ae5a7d97f2b55d9abf70458082d4b3cc7e8caaba367703
+7fee8b175fdc2695508617ac3bbee7df00336e2bc6b1ad922b82dae22137b33e
 ```
 
 ### robot — 机器人
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | @ | beanie | 53 | 72 | 53 | 69 | 87 |
+| ★★★★★ | ✨ | · | crown | 87 | 44 | **100** | 55 | 63 |
 ```
-c4edccdc05a374c09bf6ddbba0c1a8043a63628efa88ed79fee33e13b432ad6e
+259bd301a471b1ed2ea94d025e4bb601be653bb0563e7f49328287f13ff870a6
 ```
 
 ### rabbit — 兔子
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ° | halo | 67 | 50 | 87 | 89 | 89 |
+| ★★★★★ | ✨ | · | crown | 64 | **100** | 75 | 78 | 51 |
 ```
-dc357f5f63fffb49318c60210157a623bde8084cb7c6844778e6589afa92a350
+cd32890107a4ae3bc74225437c8ab6aefbcc048a1e39fe34c3324c0667dcd50d
 ```
 
 ### mushroom — 蘑菇
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | ° | propeller | 43 | 58 | 73 | 61 | 76 |
+| ★★★★★ | ✨ | @ | none | **100** | 74 | 53 | 89 | 52 |
 ```
-d6443efb8425860d0507af7b5c9c68b5c79ae50cea40a74f8afc4467d3f9d03b
+901260021b10e33eab00b816579714d0e645f2543d71b4737339ca98cd7f88e2
 ```
 
 ### chonk — 胖墩
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | · | crown | 80 | 83 | 50 | 89 | 66 |
+| ★★★★★ | ✨ | ◉ | tinyduck | **100** | 64 | 82 | 58 | 53 |
 ```
-407547f895fc552a8b1180318c494a24180231e6c6794415559b971fe240e5c7
+1834011daac05773368eb3ff1d28cd3bf939043be89533e8678cd53ec632096a
 ```
 
 ---
@@ -270,6 +280,12 @@ cp ~/.claude.json ~/.claude.json.backup
 ### Step 3: Remove `accountUuid` and Set Target `userID`
 
 Pick a `userID` from the [Pre-rolled Collection](#pre-rolled-legendary-shiny-collection) above, then run:
+
+```bash
+node apply.js PASTE_YOUR_CHOSEN_ID_HERE
+```
+
+Or manually:
 
 ```bash
 node -e "
@@ -313,6 +329,8 @@ Your new Legendary Shiny buddy will hatch with a fresh name and personality.
 If anything goes wrong:
 
 ```bash
+node apply.js --restore
+# or manually:
 cp ~/.claude.json.backup ~/.claude.json
 ```
 
@@ -333,6 +351,32 @@ node finder.js dragon epic false
 node finder.js any legendary true
 ```
 
+Example output:
+
+```
+╔══════════════════════════════════════════════════╗
+║       Claude Code Buddy Finder                  ║
+╚══════════════════════════════════════════════════╝
+
+  Target: legendary shiny capybara
+  Finding 3 result(s)...
+
+  ┌─ Result #1 ─────────────────────────────
+  │ Species: capybara (卡皮巴拉)
+  │ Rarity:  ★★★★★ legendary
+  │ Shiny:   ✨ YES
+  │ Eye:     ✦    Hat: beanie
+  │
+  │ DEBUGGING  ██████████░░░░░░░░░░ 54
+  │ PATIENCE   ███████████░░░░░░░░░ 59
+  │ CHAOS      █████████░░░░░░░░░░░ 49
+  │ WISDOM     ████████████████████ 100
+  │ SNARK      ██████████████░░░░░░ 72
+  │
+  │ UserID: 874d02aae1974e98baba8dbe60801ef4...
+  └─ (112,345 checked, 0.2s)
+```
+
 ---
 
 ## Technical Details
@@ -340,17 +384,22 @@ node finder.js any legendary true
 ### Algorithm
 
 ```
-input  = userID + "friend-2026-401"
-hash   = FNV-1a(input)            → 32-bit integer
-rng    = Mulberry32(hash)          → deterministic PRNG
+input   = userID + "friend-2026-401"
+hash    = FNV-1a(input)             → 32-bit integer
+rng     = Mulberry32(hash)          → deterministic PRNG
 
-rarity = weightedPick(rng)         → [60% common ... 1% legendary]
-species= uniformPick(rng, 18)      → one of 18 species
-eye    = uniformPick(rng, 6)       → one of 6 eye styles
-hat    = uniformPick(rng, 8)       → one of 8 hats (common = none)
-shiny  = rng() < 0.01             → independent 1% chance
+rarity  = weightedPick(rng)         → [60% common ... 1% legendary]
+species = uniformPick(rng, 18)      → one of 18 species
+eye     = uniformPick(rng, 6)       → one of 6 eye styles
+hat     = uniformPick(rng, 8)       → one of 8 hats (common = none)
+shiny   = rng() < 0.01             → independent 1% chance
 
-stats  = 5 attributes with peak/valley/normal distribution
+peak    = pick(rng, STATS)          → one stat boosted
+valley  = pick(rng, STATS) ≠ peak  → one stat nerfed
+stats   = for each stat:
+            peak   → min(100, base + 50 + floor(rng() * 30))
+            valley → max(1,   base - 10 + floor(rng() * 15))
+            normal → base + floor(rng() * 40)
 ```
 
 ### Why `accountUuid` Bypass Works
