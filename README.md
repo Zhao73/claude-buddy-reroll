@@ -8,6 +8,44 @@
   <img src="https://img.shields.io/badge/18_Species-teal?style=for-the-badge" alt="18 Species"/>
 </p>
 
+## Quick Start — 最简单的方法
+
+**直接把下面这段话粘贴发给你的 Claude Code，它会自动帮你搞定一切：**
+
+```
+帮我切换 Claude Code 的 /buddy 宠物。
+
+步骤：
+1. 先 clone 这个仓库（如果还没有的话）：git clone https://github.com/Zhao73/claude-buddy-reroll.git /tmp/buddy-reroll
+2. 运行 node /tmp/buddy-reroll/switch.js 查看所有 18 种传说闪光宠物的外观和属性
+3. 把所有宠物的名字、外观、属性展示给我看，问我想要哪一个
+4. 我选好后，运行 node /tmp/buddy-reroll/switch.js <我选的物种名> 来切换
+5. 告诉我需要怎么重启 Claude Code（需要用 CLAUDE_CODE_OAUTH_TOKEN 环境变量启动）
+
+注意：如果我还没有 OAuth token，先在单独的终端运行 claude setup-token 获取。
+```
+
+> **That's it!** Claude Code will clone the repo, show you all 18 pets, let you pick one, and switch it for you.
+
+Or if you prefer doing it yourself, use the interactive switcher:
+
+```bash
+git clone https://github.com/Zhao73/claude-buddy-reroll.git
+cd claude-buddy-reroll
+
+# Browse all 18 legendary shiny pets
+node switch.js
+
+# Switch to your favorite
+node switch.js dragon
+
+# Check current status
+node switch.js --status
+
+# Restore original buddy
+node switch.js --restore
+```
+
 ---
 
 ## How It Works
