@@ -27,13 +27,6 @@ const SPECIES = [
   "owl", "penguin", "turtle", "snail", "ghost", "axolotl",
   "capybara", "cactus", "robot", "rabbit", "mushroom", "chonk",
 ];
-const SPECIES_CN = {
-  duck: "鸭子", goose: "鹅", blob: "果冻", cat: "猫",
-  dragon: "龙", octopus: "章鱼", owl: "猫头鹰", penguin: "企鹅",
-  turtle: "乌龟", snail: "蜗牛", ghost: "幽灵", axolotl: "六角恐龙",
-  capybara: "卡皮巴拉", cactus: "仙人掌", robot: "机器人", rabbit: "兔子",
-  mushroom: "蘑菇", chonk: "胖墩",
-};
 const EYES = ["·", "✦", "×", "◉", "@", "°"];
 const HATS = ["none", "crown", "tophat", "propeller", "halo", "wizard", "beanie", "tinyduck"];
 const STATS = ["DEBUGGING", "PATIENCE", "CHAOS", "WISDOM", "SNARK"];
@@ -109,6 +102,10 @@ function mulberry32(seed) {
 
 function pick(rng, arr) { return arr[Math.floor(rng() * arr.length)]; }
 
+function formatSpeciesName(species) {
+  return species.charAt(0).toUpperCase() + species.slice(1);
+}
+
 function getRarity(rng) {
   let r = rng() * 100;
   for (const rar of RARITIES) { r -= RARITY_WEIGHTS[rar]; if (r < 0) return rar; }
@@ -155,7 +152,7 @@ function renderPet(sp) {
   const peakName = Object.entries(r.stats).reduce((a, b) => b[1] > a[1] ? b : a)[0];
 
   const lines = [];
-  lines.push(`  ${sp} — ${SPECIES_CN[sp]}  ${RARITY_STARS[r.rarity]} ${r.shiny ? "✨ SHINY" : ""}`);
+  lines.push(`  ${formatSpeciesName(sp)}  ${RARITY_STARS[r.rarity]} ${r.shiny ? "✨ SHINY" : ""}`);
   lines.push("");
   for (const l of art) lines.push("    " + l);
   lines.push("");
@@ -193,7 +190,7 @@ function applyPet(species) {
   fs.writeFileSync(CONFIG_PATH, JSON.stringify(config, null, 2));
 
   const r = generate(PREROLLED[species]);
-  console.log(`\n  Switched to: ${RARITY_STARS[r.rarity]} ${r.shiny ? "✨ SHINY " : ""}${species} (${SPECIES_CN[species]})`);
+  console.log(`\n  Switched to: ${RARITY_STARS[r.rarity]} ${r.shiny ? "✨ SHINY " : ""}${formatSpeciesName(species)}`);
   console.log("");
   for (const l of renderArt(r.species, r.eye, r.hat)) console.log("    " + l);
   console.log("\n  Restart Claude Code and type /buddy to hatch!\n");
@@ -219,7 +216,7 @@ function showStatus() {
   if (companion) {
     console.log(`    companion: ${companion.name}`);
     const r = generate(userId);
-    console.log(`    species: ${r.species} (${SPECIES_CN[r.species]})`);
+    console.log(`    species: ${r.species}`);
     console.log(`    rarity: ${RARITY_STARS[r.rarity]} ${r.rarity} ${r.shiny ? "✨ SHINY" : ""}`);
   } else {
     console.log("    companion: (not hatched)");

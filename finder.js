@@ -37,14 +37,6 @@ const SPECIES = [
   "mushroom","chonk",
 ];
 
-const SPECIES_CN = {
-  duck: "鸭子", goose: "鹅", blob: "果冻", cat: "猫",
-  dragon: "龙", octopus: "章鱼", owl: "猫头鹰", penguin: "企鹅",
-  turtle: "乌龟", snail: "蜗牛", ghost: "幽灵", axolotl: "六角恐龙",
-  capybara: "卡皮巴拉", cactus: "仙人掌", robot: "机器人", rabbit: "兔子",
-  mushroom: "蘑菇", chonk: "胖墩",
-};
-
 const EYES = ["·", "✦", "×", "◉", "@", "°"];
 
 const HATS = [
@@ -177,10 +169,9 @@ while (found.length < maxResults) {
     found.push({ id, ...result });
 
     const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-    const cn = SPECIES_CN[result.species];
 
     console.log(`  ┌─ Result #${found.length} ─────────────────────────────`);
-    console.log(`  │ Species: ${result.species} (${cn})`);
+    console.log(`  │ Species: ${result.species}`);
     console.log(`  │ Rarity:  ${RARITY_STARS[result.rarity]} ${result.rarity}`);
     console.log(`  │ Shiny:   ${result.shiny ? "✨ YES" : "no"}`);
     console.log(`  │ Eye:     ${result.eye}    Hat: ${result.hat}`);
