@@ -142,10 +142,20 @@ d1330a144e69962f6b631868a5e2a87de51582969412fa6e21556ed0fce560b6
 ### dragon — 龙
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
+| ★★★★★ | ✨ | @ | crown | **100** | 41 | 71 | 67 | 57 |
+```
+c9130b2ade6f668395281901c2cbe78c27d03d6cf1c552309b6ef34b11313742
+```
+
+<details><summary>Alternative dragon (WISDOM peak)</summary>
+
+| Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
+|--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | · | wizard | 60 | 61 | 54 | **100** | 87 |
 ```
 dfe9f0bf17732d12136e4063ed352c12c190817432f36f5add6a5e5854274dcb
 ```
+</details>
 
 ### octopus — 章鱼
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
