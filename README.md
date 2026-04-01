@@ -108,155 +108,322 @@ Peak and valley stats are randomly selected from the 5 attributes using the same
 Every species, **Legendary + Shiny**, ready to use. Stats verified against actual `/buddy` output.
 
 ### duck — 鸭子
+
+```
+      /^\     
+      __      
+    <(° )___  
+     (  ._>   
+      `--´    
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | ° | wizard | 54 | **100** | 61 | 67 | 83 |
+
 ```
 fbb064c6d0dc67b01121b757aab224f8a1c3876e85698663c8dd7d02117c3c0d
 ```
 
 ### goose — 鹅
+
+```
+      ,>      
+       (◉>    
+       ||     
+     _(__)_   
+      ^^^^    
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | ◉ | tinyduck | 64 | **100** | 41 | 51 | 78 |
+
 ```
 e4b9555f102f85c16a6774ed2a7d6798c16fdcd03c14c0af79cb53e9620c08b4
 ```
 
 ### blob — 果冻
+
+```
+     (___)    
+     .----.   
+    ( @  @ )  
+    (      )  
+     `----´   
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | @ | beanie | **100** | 46 | 76 | 86 | 83 |
+
 ```
 469b08168a7c158cafce4688ee78fc192a2603e626a5646250069a5650b2b6a9
 ```
 
 ### cat — 猫
+
+```
+      -+-     
+     /\_/\    
+    ( ✦   ✦)  
+    (  ω  )   
+    (")_(")   
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | ✦ | propeller | 64 | 71 | 61 | 41 | **100** |
+
 ```
 d1330a144e69962f6b631868a5e2a87de51582969412fa6e21556ed0fce560b6
 ```
 
 ### dragon — 龙
+
+```
+     \^^^/    
+    /^\  /^\  
+   <  @  @  > 
+   (   ~~   ) 
+    `-vvvv-´  
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | @ | crown | **100** | 41 | 71 | 67 | 57 |
+
 ```
 c9130b2ade6f668395281901c2cbe78c27d03d6cf1c552309b6ef34b11313742
 ```
 
-<details><summary>Alternative dragon (WISDOM peak)</summary>
-
-| Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
-|--------|-------|-----|-----|-----------|----------|-------|--------|-------|
-| ★★★★★ | ✨ | · | wizard | 60 | 61 | 54 | **100** | 87 |
-```
-dfe9f0bf17732d12136e4063ed352c12c190817432f36f5add6a5e5854274dcb
-```
-</details>
-
 ### octopus — 章鱼
+
+```
+     (___)    
+     .----.   
+    ( °  ° )  
+    (______)  
+    /\/\/\/\  
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | ° | beanie | 77 | **100** | 69 | 69 | 44 |
+
 ```
 7008e44266d5ba07b12a302728729febe7265ee640b069f4288158dc44b26e63
 ```
 
 ### owl — 猫头鹰
+
+```
+      -+-     
+     /\  /\   
+    ((×)(×))  
+    (  ><  )  
+     `----´   
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | × | propeller | 84 | 53 | 54 | **100** | 72 |
+
 ```
 e9f590be928a17e32664baa252e08edce6812dc86ed96abe3c06ae496c5d1950
 ```
 
 ### penguin — 企鹅
+
+```
+      /^\     
+    .---.     
+    (·>·)     
+   /(   )\    
+    `---´     
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | · | wizard | 51 | 53 | **100** | 65 | 80 |
+
 ```
 1c9aef4f3ef2ff9d561fdb467f120aee7ac244ff464347479b2d2b354e35dfb5
 ```
 
 ### turtle — 乌龟
+
+```
+     _,--._   
+    ( °  ° )  
+   /[______]\ 
+    ``    ``  
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | ° | none | **100** | 59 | 89 | 52 | 89 |
+
 ```
 f287702f0e017d1f65599231d4c6a9ce53274d34e6090f0081d0194fd87df49c
 ```
 
 ### snail — 蜗牛
+
+```
+     [___]    
+   @    .--.  
+    \  ( @ )  
+     \_`--´   
+    ~~~~~~~   
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | @ | tophat | **100** | 89 | 64 | 67 | 42 |
+
 ```
 a75398e61456425c7eeecd5fef2b567338d289a300669e5570db32b9cf4bafb3
 ```
 
 ### ghost — 幽灵
+
+```
+     [___]    
+     .----.   
+    / ◉  ◉ \  
+    |      |  
+    ~`~``~`~  
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | ◉ | tophat | 40 | 69 | 61 | **100** | 69 |
+
 ```
 b4cf03d9615a11b13560c625d7c1f4e26a5960e7674c18c7084582d1542755f3
 ```
 
 ### axolotl — 六角恐龙
+
+```
+      ,>      
+  }~(______)~{
+  }~(° .. °)~{
+    ( .--. )  
+    (_/  \_)  
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | ° | tinyduck | **100** | 75 | 51 | 52 | 79 |
+
 ```
 9afda6fae3735ad19bed7e55c826d3c4c16ab5b13fa4d869e8bce9de0c6df45c
 ```
 
 ### capybara — 卡皮巴拉
+
+```
+     (___)    
+    n______n  
+   ( ✦    ✦ ) 
+   (   oo   ) 
+    `------´  
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | ✦ | beanie | 54 | 59 | 49 | **100** | 72 |
+
 ```
 874d02aae1974e98baba8dbe60801ef48852f699764d418577785f8eb5ffbab8
 ```
 
 ### cactus — 仙人掌
+
+```
+   n  ____  n 
+   | |✦  ✦| | 
+   |_|    |_| 
+     |    |   
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | ✦ | none | 85 | 85 | 52 | **100** | 48 |
+
 ```
 7fee8b175fdc2695508617ac3bbee7df00336e2bc6b1ad922b82dae22137b33e
 ```
 
 ### robot — 机器人
+
+```
+     \^^^/    
+     .[||].   
+    [ ·  · ]  
+    [ ==== ]  
+    `------´  
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | · | crown | 87 | 44 | **100** | 55 | 63 |
+
 ```
 259bd301a471b1ed2ea94d025e4bb601be653bb0563e7f49328287f13ff870a6
 ```
 
 ### rabbit — 兔子
+
+```
+     \^^^/    
+     (\__/)   
+    ( ·  · )  
+   =(  ..  )= 
+    (")__(")  
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | · | crown | 64 | **100** | 75 | 78 | 51 |
+
 ```
 cd32890107a4ae3bc74225437c8ab6aefbcc048a1e39fe34c3324c0667dcd50d
 ```
 
 ### mushroom — 蘑菇
+
+```
+   .-o-OO-o-. 
+  (__________)
+     |@  @|   
+     |____|   
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | @ | none | **100** | 74 | 53 | 89 | 52 |
+
 ```
 901260021b10e33eab00b816579714d0e645f2543d71b4737339ca98cd7f88e2
 ```
 
 ### chonk — 胖墩
+
+```
+      ,>      
+    /\    /\  
+   ( ◉    ◉ ) 
+   (   ..   ) 
+    `------´  
+```
+
 | Rarity | Shiny | Eye | Hat | DEBUGGING | PATIENCE | CHAOS | WISDOM | SNARK |
 |--------|-------|-----|-----|-----------|----------|-------|--------|-------|
 | ★★★★★ | ✨ | ◉ | tinyduck | **100** | 64 | 82 | 58 | 53 |
+
 ```
 1834011daac05773368eb3ff1d28cd3bf939043be89533e8678cd53ec632096a
 ```
